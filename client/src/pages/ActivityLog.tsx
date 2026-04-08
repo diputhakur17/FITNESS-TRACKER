@@ -48,7 +48,7 @@ const ActivityLog = () => {
       return toast("Please enter valid data");
     }
     try {
-      const { data } = await api.post("/api/activit-logs", {
+      const { data } = await api.post("/api/activity-logs", {
         data: formData,
       });
       setAllActivityLogs((prev) => [...prev, data]);
