@@ -1,4 +1,5 @@
-import { GoogleGenAI } from "@Google/Genai";
+
+import { GoogleGenAI } from "@google/genai";
 import { log } from "console";
 import fs from "fs";
 

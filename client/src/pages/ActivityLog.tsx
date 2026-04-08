@@ -94,7 +94,7 @@ const ActivityLog = () => {
         "Are you sure you want to delete this entry ?",
       );
       if (!confirm) return;
-      await api.delete(`/api/activit-logs/${documentId}`);
+      await api.delete(`/api/activity-logs/${documentId}`);
       setAllActivityLogs((prev) =>
         prev.filter((a) => a.documentId !== documentId),
       );
